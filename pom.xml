@@ -12,6 +12,7 @@
     <artifactId>currency</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>currency-rate</name>
+    <packaging>jar</packaging>
     <description>Currency rate microservice</description>
     <url/>
     <licenses>
@@ -132,29 +133,6 @@
                             <version>1.18.36</version>
                         </path>
                     </annotationProcessorPaths>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>jaxb2-maven-plugin</artifactId>
-                <version>2.5.0</version>
-                <executions>
-                    <execution>
-                        <id>xjc</id>
-                        <goals>
-                            <goal>xjc</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <sources>
-                        <source>src/main/resources/xsd/ValCurs.xsd</source>
-                    </sources>
-                    <outputDirectory>${basedir}/src/main/java</outputDirectory>
-                    <clearOutputDir>false</clearOutputDir>
-                    <packageName>ru.extoozy.currency.schema</packageName>
-                    <extension>true</extension>
-                    <generateEpisode>false</generateEpisode>
                 </configuration>
             </plugin>
             <plugin>

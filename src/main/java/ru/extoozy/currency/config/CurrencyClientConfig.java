@@ -8,7 +8,5 @@ import org.springframework.stereotype.Component;
 @Component
 @ConfigurationProperties(prefix = "currency.client")
 public class CurrencyClientConfig {
-
     private String url;
-
 }
